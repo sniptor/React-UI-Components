@@ -1,0 +1,17 @@
+.ButtonContainer {
+    background-color: #FF2773;
+    border-radius: 24px;
+    padding: 12px 22px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    -webkit-transition: 200ms ease-out;
+}
+
+.ButtonContainer:hover {
+    background-color: #FF4D95;
+}
