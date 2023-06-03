@@ -1,0 +1,84 @@
+.InputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    height: 130px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1.5px dashed #B3ABBC;
+    cursor: pointer;
+    background-color: white;
+    flex-direction: column;
+    -webkit-transition: 200ms ease-out;
+}
+
+.InputBox {
+    display: none;
+}
+
+.InputContainer:hover {
+    border: 1.5px dashed #FF2773;
+}
+
+.InputFileText {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 700;
+    color: #685879;
+    -webkit-transition: 200ms ease-out;
+}
+
+.FilenName {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 95px;
+    font-weight: 700;
+    position: absolute;
+    color: #685879;
+    -webkit-transition: 200ms ease-out;
+}
+
+.FileIcon {
+    scale: 1.2;
+    fill: #685879;
+    -webkit-transition: 200ms ease-out;
+}
+
+.HoverDiv {
+    width: 248px;
+    height: 128px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 50;
+}
+
+.HoverDiv:hover+.FileIcon {
+    fill: #FF2773 !important;
+}
+
+.HoverDiv:hover~.InputFileText {
+    color: #FF2773 !important;
+}
+
+.loader {
+    border: 3px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 3px solid #685879;
+    width: 10px;
+    height: 10px;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

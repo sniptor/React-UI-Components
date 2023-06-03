@@ -1,0 +1,26 @@
+.InputContainer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.TextAreaBox {
+    width: 200px;
+    padding: 12px 18px;
+    border-radius: 24px;
+    border: 1px solid #B3ABBC;
+    outline-color: #685879;
+    /* outline-color: #EE7D52; */
+    -webkit-transition: 150ms;
+}
+
+.TextAreaBox::placeholder {
+    color: #685879;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    /* Firefox */
+}
+
+.TextAreaBox:hover {
+    border: 1px solid #685879;
+}
