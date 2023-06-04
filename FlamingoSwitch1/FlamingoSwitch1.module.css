@@ -8,15 +8,15 @@
 .InputBox {
     opacity: 0;
     cursor: pointer;
-    height: 25px;
-    width: 50px;
+    height: 23px;
+    width: 56px;
     z-index: 2;
 }
 
 .checkmark {
     position: absolute;
-    height: 25px;
-    width: 50px;
+    height: 28px;
+    width: 56px;
     background-color: #eee;
     border-radius: 24px;
     border: 1px solid #B3ABBC;
@@ -53,7 +53,7 @@
 .InputBox:checked~.checkmark1 {
     background-color: white;
     border: 1px solid white;
-    left: 30px;
+    left: 32px;
 }
 
 .InputBox:checked~.switchText {
@@ -83,7 +83,7 @@
     position: absolute;
     color: #685879;
     font-size: 12px;
-    left: 28px;
+    left: 27px;
     -webkit-transition: 300ms;
 }
 
