@@ -1,0 +1,91 @@
+.InputContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.InputBox {
+    opacity: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 50px;
+    z-index: 2;
+}
+
+.checkmark {
+    position: absolute;
+    height: 25px;
+    width: 50px;
+    background-color: #eee;
+    border-radius: 24px;
+    border: 1px solid #B3ABBC;
+    -webkit-transition: 250ms;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.checkmark1 {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #685879;
+    border-radius: 50%;
+    border: 1px solid #685879;
+    -webkit-transition: 300ms;
+    left: 10px;
+}
+
+.checkmark:hover {
+    border: 1px solid #685879;
+}
+
+.InputBox:hover~.checkmark {
+    border: 1px solid #685879;
+}
+
+.InputBox:checked~.checkmark {
+    background-color: #FF2773;
+    border: 1px solid #FF2773;
+}
+
+.InputBox:checked~.checkmark1 {
+    background-color: white;
+    border: 1px solid white;
+    left: 40px;
+}
+
+.InputBox:checked~.switchText {
+    color: white;
+    content: 'ON';
+    left: 15px;
+}
+
+.InputBox:checked~.switchText:after {
+    content: "ON";
+}
+
+.checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.switchText {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    color: #685879;
+    font-size: 12px;
+    left: 35px;
+    -webkit-transition: 300ms;
+}
+
+.switchText:after {
+    content: 'OFF';
+}

@@ -1,0 +1,63 @@
+.InputContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.InputBox {
+    /* position: absolute; */
+    opacity: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+}
+
+.checkmark {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid #B3ABBC;
+    -webkit-transition: 250ms;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkmark:hover {
+    border: 1px solid #685879;
+}
+
+.InputBox:hover~.checkmark {
+    border: 1px solid #685879;
+}
+
+.InputBox:checked~.checkmark {
+    background-color: #FF2773;
+    border: 1px solid #FF2773;
+}
+
+.InputBox:checked~.checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.CheckBoxLabel {
+    font-family: Arial, sans-serif;
+}

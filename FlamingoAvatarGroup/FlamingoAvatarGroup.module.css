@@ -1,0 +1,32 @@
+.AvatarGroupContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.Avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 3px solid white;
+    color: white;
+}
+
+.AvatarLast {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -15px;
+    background-color: #685879;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
