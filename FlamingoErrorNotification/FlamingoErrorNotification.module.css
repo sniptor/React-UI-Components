@@ -1,0 +1,54 @@
+.NotificationContainer {
+    display: flex;
+    background-color: #EE7D52;
+    position: absolute;
+    border-radius: 8px;
+    padding: 2px 2px 2.2px 2px;
+    -webkit-transition: 250ms;
+    /* set it Fixed with top/bottom positioning */
+    /* position: fixed;
+    bottom: 20px;
+    right: 10px; */
+}
+
+.NotificationIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 8px;
+}
+
+.NotificationContentContainer {
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+}
+
+.NotificationContentText {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 10px;
+    margin-top: 6px;
+    color: #190134;
+}
+
+.NotificationContentData {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #685879;
+    color: #685879;
+    line-height: 5px;
+}
+
+.NotificationCloseIconContainer {
+    background-color: white;
+    border-radius: 0 8px 8px 0;
+    padding: 14px;
+}
+
+.CrossIcon {
+    scale: 1.2;
+    cursor: pointer;
+}
