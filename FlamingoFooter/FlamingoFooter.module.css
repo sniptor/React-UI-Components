@@ -1,0 +1,85 @@
+.Footer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FooterContainer {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.FooterBottom {
+    margin-top: 60px;
+}
+
+.FooterBottom1 {
+    display: none;
+}
+
+.ColHeader {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.FooterLink {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #685879;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.CopyrightText {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #685879;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.FooterLinksContainer {
+    margin-top: 20px;
+}
+
+.FooterIconLinksContainer {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.AppStoreIcon {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.GooglePlayIcon {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+@media screen and (min-width: 200px) and (max-width:800px) {
+    .FooterContainer {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .FooterBottom {
+        display: none;
+    }
+    .FooterBottom1 {
+        display: block;
+        padding: 20px;
+    }
+}
